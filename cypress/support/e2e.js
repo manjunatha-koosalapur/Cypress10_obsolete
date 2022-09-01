@@ -17,7 +17,7 @@
 import './commands'
 
 beforeEach(() => {
-    cy.log('I am inside e2.e.js file')
+    cy.log('I am inside e2e.js file to validate beforeEach as global hook')
 });
 
 // Alternatively you can use CommonJS syntax:
