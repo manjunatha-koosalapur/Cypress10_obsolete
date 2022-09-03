@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node your-script.js",
     "pretest": "echo Im PreTest",
     "posttest": "echo Im PostTest",
     "test": "echo Im the Test",
