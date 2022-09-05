@@ -11,7 +11,7 @@ describe(' Browser inputs ', () => {
         cy.visit('http://zero.webappsecurity.com/login.html')
     })
 
-    it('should fill username ', ()=>{
+    it(' should fill username ', ()=>{
         cy.get('#user_login').as('login')            //alias
         cy.get('@login').clear()
         cy.get('@login').type('TestLogin', {delay: 100})
