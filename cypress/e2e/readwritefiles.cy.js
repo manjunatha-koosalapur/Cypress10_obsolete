@@ -14,7 +14,7 @@ it.skip ('Read file using Fixture()', function(){
     cy.log(this.test_data.name)
 })
 
-it.skip('Read file using readFile()', function(){
+it.skip1('Read file using readFile()', function(){
     cy.readFile('./cypress/fixtures/example.json').then((data) => {
         cy.log(data.name)
         cy.log(data.email)

@@ -1,5 +1,5 @@
 ///<reference types="cypress"/>
-describe.skip('First simple test with Cypress', function(){
+describe.skip1('First simple test with Cypress', function(){
 
     it('True should be true', function(){
         expect(true).to.equal(true)

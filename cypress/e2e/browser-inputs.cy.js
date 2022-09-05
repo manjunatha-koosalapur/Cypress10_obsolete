@@ -1,11 +1,11 @@
 ///<reference types="cypress"/>
 describe('Browser inputs', () => {
 
-    it('should override the current time', function(){
-        const date = new Date (2020, 3, 10).getTime() //return timestamp
-        cy.clock(date)
-        cy.log(date)
-    })
+    // it('should override the current time', function(){
+    //     const date = new Date (2020, 3, 10).getTime() //return timestamp
+    //     cy.clock(date)
+    //     cy.log(date)
+    // })
 
     it('should load login page', function(){
         cy.visit('http://zero.webappsecurity.com/login.html')

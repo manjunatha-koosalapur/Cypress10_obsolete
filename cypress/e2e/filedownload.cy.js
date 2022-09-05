@@ -1,7 +1,7 @@
 ///<reference types="cypress"/>
 
 
-it.skip ('File download', function(){
+it.skip1('File download', function(){
     cy.downloadFile('https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg','mydownloads','example.jpg')
 
 })
