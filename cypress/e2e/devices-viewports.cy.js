@@ -1,5 +1,5 @@
 ///<reference types="cypress"/>
-describe('Device tests', function(){
+describe.skip('Device tests', function(){
 
     it('720p', function(){
         cy.viewport(1280, 720)

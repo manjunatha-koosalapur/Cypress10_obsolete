@@ -1,5 +1,5 @@
 ///<reference types="cypress"/>
-describe('First simple test with Cypress', function(){
+describe.skip('First simple test with Cypress', function(){
 
     it('True should be true', function(){
         expect(true).to.equal(true)
@@ -18,7 +18,7 @@ describe('First simple test with Cypress', function(){
 })
 
 
-describe('Second simple test with Cypress', function(){
+describe.skip('Second simple test with Cypress', function(){
 
     it('False should be false', function(){
         expect(false).to.equal(false)
