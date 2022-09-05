@@ -1,5 +1,5 @@
 describe('API Automation Test Suite', () => {
-  it('GET all employees', () => {
+  it(' GET all employees ', () => {
     cy.request({
     method: 'GET',
     url: "https://qa-practice.herokuapp.com/api/v1/employees"
@@ -10,7 +10,7 @@ describe('API Automation Test Suite', () => {
     })
   })
 
-  it('POST create employee', () => {
+  it(' POST create employee ', () => {
     cy.request({
     method: 'POST',
     url: "https://qa-practice.herokuapp.com/api/v1/employees",
