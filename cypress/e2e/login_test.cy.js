@@ -7,7 +7,7 @@ describes.skip('Login Tests', function(){
         cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
     })
 
-    it('Login with valid username and password', function(){
+    it.skip('Login with valid username and password', function(){
         loginPage.enterUserName('Admin')
         loginPage.enterPassword('admin123')
         loginPage.clickLogin()

@@ -5,7 +5,7 @@ before(function(){
     cy.fixture('example.json').as('test_data')
 })
 
-it.skip ('Read file using Fixture()', function(){
+it.skip('Read file using Fixture()', function(){
     cy.fixture('example.json').then((data) =>{
         cy.log(data.name)
         cy.log(data.email)
@@ -14,7 +14,7 @@ it.skip ('Read file using Fixture()', function(){
     cy.log(this.test_data.name)
 })
 
-it.skip1('Read file using readFile()', function(){
+it.skip('Read file using readFile()', function(){
     cy.readFile('./cypress/fixtures/example.json').then((data) => {
         cy.log(data.name)
         cy.log(data.email)

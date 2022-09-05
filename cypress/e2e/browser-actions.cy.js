@@ -1,5 +1,5 @@
 ///<reference types="cypress"/>
-describe.skip1('Browser actions', () => {
+describe.skip('Browser actions', () => {
     it('should load correct url', ()=>{
         cy.visit('https://example.com/', {timeout: 6000})
     })

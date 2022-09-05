@@ -1,6 +1,6 @@
 ///<reference types="cypress"/>
 
-it.skip1('Assertion demo', function(){
+it.skip('Assertion demo', function(){
     cy.visit('https://example.cypress.io')
     // cy.contains('Querying').click()
     cy.contains('get').click()
