@@ -16,9 +16,9 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
-beforeEach(() => {
-    cy.log('I am inside e2e.js file to validate beforeEach as global hook')
-});
+// beforeEach(() => {
+//     cy.log('I am inside e2e.js file to validate beforeEach as global hook')
+// });
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

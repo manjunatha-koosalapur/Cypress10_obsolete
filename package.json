@@ -9,6 +9,7 @@
     "posttest": "echo Im PostTest",
     "test": "echo Im the Test",
     "hello": "echo Hello World",
+    "cypress:open": "cypress open",
     "cy-run": "cypress run",
     "cy-open": "cypress open"
   },
