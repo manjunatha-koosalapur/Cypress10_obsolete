@@ -27,4 +27,26 @@ describe('API Automation Test Suite', () => {
       // cy.log(JSON.stringify(Response.body))
     })
   })
+
+  it(' GET employee with ID ', () => {
+    cy.request({
+    method: 'GET',
+    url: "https://qa-practice.herokuapp.com/api/v1/employees/2"
+    }).as('getEmployeeRequest')
+    cy.get('@getEmployeeRequest').then(Response=> {
+      expect(Response.status).to.eq(200)
+      cy.log(JSON.stringify(Response.body))
+    })
+  })
+
+  it(' DELETE employee ID ', () => {
+    cy.request({
+    method: 'DELETE',
+    url: "https://qa-practice.herokuapp.com/api/v1/employees/2"
+    }).as('getAllEmployeesRequest')
+    cy.get('@getAllEmployeesRequest').then(Response=> {
+      expect(Response.status).to.eq(204)
+      cy.log(JSON.stringify(Response.body))
+    })
+  })
 })

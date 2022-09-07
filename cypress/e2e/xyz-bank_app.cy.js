@@ -20,7 +20,7 @@ describe('XYZ bank - Customer', function(){
         // cy.get('.error').should('contain', 'Deposit Successful')
     })
 
-    it('Customer withdrawl', function(){
+    it.skip('Customer withdrawl', function(){
         cy.get('.home').click()
         cy.contains('Customer Login').click()
         cy.get('#userSelect').select('Harry Potter')
