@@ -28,7 +28,7 @@ describe('API Automation Test Suite', () => {
     })
   })
 
-  it(' GET employee with ID ', () => {
+  it.skip(' GET employee with ID ', () => {
     cy.request({
     method: 'GET',
     url: "https://qa-practice.herokuapp.com/api/v1/employees/2"
@@ -39,7 +39,7 @@ describe('API Automation Test Suite', () => {
     })
   })
 
-  it(' DELETE employee ID ', () => {
+  it.skip(' DELETE employee ID ', () => {
     cy.request({
     method: 'DELETE',
     url: "https://qa-practice.herokuapp.com/api/v1/employees/2"
