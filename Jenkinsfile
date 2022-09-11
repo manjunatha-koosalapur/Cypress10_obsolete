@@ -31,11 +31,5 @@ pipeline{
             
         }
 
-        post('Deployed'){
-            steps{
-            echo "Deployment completed"
-            } 
-
         }
     }
-}
