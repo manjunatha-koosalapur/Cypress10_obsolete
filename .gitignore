@@ -1,3 +1,4 @@
+node_modules
 cypress/e2e/assertion.cy.js
 cypress/e2e/login_test.cy.js
 cypress/e2e/devices-viewports.cy.js
