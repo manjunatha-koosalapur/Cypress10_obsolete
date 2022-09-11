@@ -1,13 +1,13 @@
 pipeline{
     agent any
-    parameter{
+    parameters{
         string(name: 'SPEC', defaultValue: "cypress/e2e/**/**", description: "enter the script path")
         choice(name: 'BROWSER', choices: ['chrome', 'edge', 'firefox'], description: "enter the bowser")
     }
 
-    options{
-        ansiColor('xterm')
-    }
+    // options{
+    //     ansiColor('xterm')
+    // }
 
     stages{
         stage('Builinging'){
