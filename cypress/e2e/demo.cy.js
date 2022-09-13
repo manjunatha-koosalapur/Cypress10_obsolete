@@ -1,6 +1,6 @@
 ///<reference types="cypress"/>
 
-describe('OrangeHRM E2E Test suite', function(){
+describe('OrangeHRM E2E Test', function(){
     it('Login', function(){
         // cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
         cy.visit('/')                       //** added base URL in cypress.config.js file**/
