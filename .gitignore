@@ -10,4 +10,4 @@ cypress/e2e/pom2.cy.js
 cypress/e2e/pom3.cy.js
 cypress/e2e/readwritefiles.cy.js
 cypress/e2e/test1.cy.js
-cypress/e2e/demo.cy.js
+# cypress/e2e/demo.cy.js

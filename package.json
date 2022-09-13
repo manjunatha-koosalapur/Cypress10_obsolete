@@ -1,7 +1,6 @@
 {
   "name": "cypress10",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -17,10 +16,11 @@
   "author": "Manjunatha Koosalapur",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^10.6.0",
     "cypress-downloadfile": "^1.2.3"
   },
   "devDependencies": {
+    "cypress": "^10.7.0",
     "cypress-file-upload": "^5.0.8"
-  }
+  },
+  "description": ""
 }
