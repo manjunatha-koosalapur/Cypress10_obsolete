@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
     "pretest": "echo Im PreTest",
-    "posttest": "echo Im PostTest",
     "test": "echo Im the Test",
     "hello": "echo Hello World",
-    "cypress:open": "cypress open",
+    "posttest": "echo Im PostTest",
     "cy-run": "cypress run",
-    "cy-open": "cypress open"
+    "cy-open": "cypress open",
+    "cy-dashboard-run":"cypress run --record --key 793ef921-3bef-4cf2-8d6f-212d25c88a66",
+    "cy-run-stg":"cypress run --config-file staging-config.json",
+    "cy-run-prod":"cypress run --config-file production-config.json"
   },
   "keywords": [],
   "author": "Manjunatha Koosalapur",

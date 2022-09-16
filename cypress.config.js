@@ -5,8 +5,9 @@ module.exports = defineConfig({
   e2e: {
     projectId: "x51ui9",
     watchForFileChanges: true,
-    defaultCommandTimeout: 6000,
-    "baseUrl": "https://opensource-demo.orangehrmlive.com/",
+    defaultCommandTimeout: 4000,
+    // baseUrl: "https://opensource-demo.orangehrmlive.com/",
+
     setupNodeEvents(on, config) {
       on('task', {downloadFile}) 
     },
