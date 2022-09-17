@@ -8,13 +8,6 @@ describe('HTML Page Test Suite - COMMANDS', () => {
         cy.url().should('contain','cypress')                
     })
 
-    
-    it('TITLE command on the page', function(){
-        cy.visit('cypress/index.html')
-        cy.title().should('eql','Cypress v10')
-           
-    })
-
     it('TITLE command on the page', function(){
         cy.visit('cypress/index.html')
         cy.title().should('eql','Cypress v10')
@@ -67,8 +60,56 @@ describe('HTML Page Test Suite - COMMANDS', () => {
         cy.visit('cypress/index.html')
         cy.get('.course-list').its('length')
         cy.get('.course-list').invoke('text')
+    })
+    
+    it('TEHN command on the page', function(){
+        cy.visit('cypress/index.html')
+        cy.url().then(url =>{
+            cy.log(url)
+        })
+        cy.url().should('contain','cypress')
 
     })
+
+    it('EXPECT command on the page', function(){
+        const courses =[
+            { id: 1, title: 'cypress' },
+            { id: 2, title: 'jest' },
+            { id: 3, title: 'playwright' },
+            { id: 4, title: 'testcafe' }
+        ]
+
+        cy.wrap(courses).then (courses=>{
+            expect(courses).to.have.length(4)
+        })
+
+        cy.wrap(courses).then (courses=>{
+            expect(courses[0].title).to.contains('cypress')
+        })
+
+        cy.url().then (url=>{
+            expect(url).to.contains('index.html')
+        })
+
+    })
+    
+    it('EACH command on the page', function(){
+        cy.visit('cypress/index.html')
+        cy.get('.course-list').each($element =>{
+            cy.log($element.text())
+            cy.wrap($element).should('contain','Cypress')
+        })
+           
+    })
+
+    // it('EACH command on the page', function(){
+    //     cy.visit('cypress/index.html')
+    //     cy.get(':nth-child(1) > .card-body').each($element =>{
+    //         cy.log($element.text())
+    //         cy.wrap($element).should('contain','GB')
+    //     })
+           
+    // })
 
 
 })
