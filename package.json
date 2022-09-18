@@ -3,17 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "pretest": "echo Im PreTest",
     "test": "echo Im the Test",
-    "hello": "echo Hello World",
-    "posttest": "echo Im PostTest",
     "cy-run": "cypress run",
     "cy-open": "cypress open",
     "cy-run-stg":"cypress run --config-file staging-config.json",
     "cy-run-prod":"cypress run --config-file production-config.json",
     "e2e:chrome": "npx cypress run --browser chrome",
     "e2e:firefox": "npx cypress run --browser firefox",
-    "e2e:cy:dashboard":"npx cypress run --record --key 793ef921-3bef-4cf2-8d6f-212d25c88a66"
+    "e2e:cy:dashboard":"npx cypress run --record --key 793ef921-3bef-4cf2-8d6f-212d25c88a66",
+    "e2e:cy:dashboard2":"npx cypress run --record --key 793ef921-3bef-4cf2-8d6f-212d25c88a66 --spec cypress/e2e/05-assertions.cy.js",
+    "e2e:cy:dashboard:tag":"npx cypress run --record --key 793ef921-3bef-4cf2-8d6f-212d25c88a66 --spec cypress/e2e/05-assertions.cy.js --tag 8TC"
     
 
   },

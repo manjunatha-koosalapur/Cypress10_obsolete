@@ -6,6 +6,7 @@ module.exports = defineConfig({
     projectId: "x51ui9",
     watchForFileChanges: true,
     defaultCommandTimeout: 4000,
+    retries: 2,
     // baseUrl: "https://opensource-demo.orangehrmlive.com/",
     // baseUrl: "http://localhost:3000/"
     setupNodeEvents(on, config) {
