@@ -1,4 +1,4 @@
-describe('Intercept Commands Test Suite', () => {
+describe.skip('Intercept Commands Test Suite', () => {
     
     beforeEach(()=> {
         cy.intercept({

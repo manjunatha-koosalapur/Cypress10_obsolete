@@ -9,9 +9,13 @@
     "posttest": "echo Im PostTest",
     "cy-run": "cypress run",
     "cy-open": "cypress open",
-    "cy-dashboard-run":"cypress run --record --key 793ef921-3bef-4cf2-8d6f-212d25c88a66",
     "cy-run-stg":"cypress run --config-file staging-config.json",
-    "cy-run-prod":"cypress run --config-file production-config.json"
+    "cy-run-prod":"cypress run --config-file production-config.json",
+    "e2e:chrome": "npx cypress run --browser chrome",
+    "e2e:firefox": "npx cypress run --browser firefox",
+    "e2e:cy:dashboard":"npx cypress run --record --key 793ef921-3bef-4cf2-8d6f-212d25c88a66"
+    
+
   },
   "keywords": [],
   "author": "Manjunatha Koosalapur",

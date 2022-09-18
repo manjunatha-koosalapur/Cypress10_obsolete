@@ -7,7 +7,7 @@ module.exports = defineConfig({
     watchForFileChanges: true,
     defaultCommandTimeout: 4000,
     // baseUrl: "https://opensource-demo.orangehrmlive.com/",
-
+    // baseUrl: "http://localhost:3000/"
     setupNodeEvents(on, config) {
       on('task', {downloadFile}) 
     },
