@@ -1,8 +1,8 @@
 version: 2.1
 orbs:
-  cypress: cypress-io/cypress@2.2.0
+  cypress: cypress-io/cypress@2
 workflows:
   build:
     jobs:
       - cypress/run:
-          command: npm run e2e:cy:dashboard:tag
+          record: true
