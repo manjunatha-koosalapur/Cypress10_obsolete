@@ -7,13 +7,14 @@ pipeline{
 }
 
 stages{
- stage('Dwonload the dependencies')
+ stage('Dwonload the dependencies'){
   steps{
    sh "npm install"
 }
 }   
- stage('Run tests')
+ stage('Run tests') {
   steps{
    sh "npm run e2e:cy:dashboard:tag"
+}
 }
 }
