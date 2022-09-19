@@ -1,5 +1,5 @@
 describe('API Request Test Suite', () => {
-    it('GET request', () => {
+    it.skip('GET request', () => {
         cy.request('GET', 'http://localhost:3000/users').then(response => {
             cy.log(response.status)
             cy.log(response.statusText)
@@ -15,7 +15,7 @@ describe('API Request Test Suite', () => {
 
     })
 
-    it('GET request with Parameters', () => {
+    it.skip('GET request with Parameters', () => {
         cy.request({
             method: 'GET',
             url: 'http://localhost:3000/users',
@@ -33,7 +33,7 @@ describe('API Request Test Suite', () => {
         })
     })
 
-    it('PUT request', () => {
+    it.skip('PUT request', () => {
         cy.request('PUT', 'http://localhost:3000/users/16',
             {"firstName": "Sarah2","lastName": "testPUT","subjectId": "1","id": 16 })
     })
@@ -43,7 +43,7 @@ describe('API Request Test Suite', () => {
         cy.request('DELETE', 'http://localhost:3000/users/17')
     })
 
-    it('Secured API request1', () => {
+    it.skip('Secured API request1', () => {
         cy.request({
             method: 'GET',
             url: 'http://localhost:3000/users',
@@ -52,7 +52,7 @@ describe('API Request Test Suite', () => {
         })
     })
 
-    it('Secured API request2', () => {
+    it.skip('Secured API request2', () => {
         cy.request({
             method: 'GET',
             url: 'http://localhost:3000/users',
