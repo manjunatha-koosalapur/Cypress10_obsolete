@@ -5,3 +5,5 @@ workflows:
   build:
     jobs:
       - cypress/run
+          browser: chrome
+          spec: cypress/e2e/05-assertions.cy.js
