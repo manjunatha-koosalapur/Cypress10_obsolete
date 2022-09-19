@@ -4,4 +4,23 @@ orbs:
 workflows:
   build:
     jobs:
-      - cypress/run
+      - cypress/install
+      - cypress/run:
+          name: 4 machines
+          requires:
+            - cypress/install
+          record: true
+          parallel: true
+          parallelism: 4
+          group: 4 machines
+      - cypress/run:
+          name: Chrome
+          requires:
+            - cypress/install
+          executor: cypress/browsers-chrome69
+          record: true
+          parallel: true
+          parallelism: 2
+          group: smoke tests
+          browser: chrome
+          spec: cypress\e2e\05-assertions.cy.js
