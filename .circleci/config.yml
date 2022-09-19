@@ -5,9 +5,4 @@ workflows:
   build:
     jobs:
       - cypress/run
-          name: Chrome
-          requires:
-            - cypress/install
-          executor: cypress/browsers-chrome69
-          browser: chrome
           spec: cypress/e2e/05-assertions.cy.js
