@@ -14,12 +14,12 @@ stages{
 		}
  stage('Dwonload the dependencies'){
   steps{
-   sh "npm install"
+   bat "npm install"
 }
 }   
  stage('Run tests') {
   steps{
-   sh "npm run e2e:cy:dashboard:tag"
+   bat "npm run e2e:cy:dashboard:tag"
 }
 }
 }
