@@ -7,6 +7,11 @@ pipeline{
 }
 
 stages{
+ stage('Clone Git Repo'){
+				steps{
+					git 'https://github.com/qaboxletstest/cypress-jenkins-demo.git'
+		    }
+		}
  stage('Dwonload the dependencies'){
   steps{
    sh "npm install"
